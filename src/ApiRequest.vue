@@ -2,7 +2,7 @@
   <div class="js-api-request">
 
     <transition name="fade">
-      <div class="spinner" v-if="state=='loading' && !hasLoadingSlot" :style="{padding: spinnerPadding, zoom: spinnerScale}">
+      <div class="spinner" v-if="state=='loading' && !hasLoadingSlot">
         <component v-if="spinner !== 'none'" :is="spinner" :color="spinnerColor"></component>
       </div>
     </transition>
@@ -21,18 +21,6 @@
 
   </div>
 </template>
-
-<style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>
 
 <script>
   export default {
