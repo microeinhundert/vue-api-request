@@ -1,5 +1,5 @@
 <template>
-  <div class="js-api-request" :class="[animate]">
+  <div class="js-api-request">
 
     <div class="spinner"
          v-if="state=='loading' && !hasLoadingSlot"
