@@ -7,14 +7,7 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 119:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 123:
+/***/ 122:
 /***/ (function(module, exports, __webpack_require__) {
 
 function injectStyle (ssrContext) {
@@ -24,7 +17,7 @@ var Component = __webpack_require__(15)(
   /* script */
   __webpack_require__(78),
   /* template */
-  __webpack_require__(126),
+  __webpack_require__(125),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -38,14 +31,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 124:
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(15)(
   /* script */
   __webpack_require__(79),
   /* template */
-  __webpack_require__(125),
+  __webpack_require__(124),
   /* styles */
   null,
   /* scopeId */
@@ -59,30 +52,29 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 125:
+/***/ 124:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "js-api-request",
-    class: [_vm.animate]
+    staticClass: "js-api-request"
+  }, [_c('transition', {
+    attrs: {
+      "name": "fade"
+    }
   }, [(_vm.state == 'loading' && !_vm.hasLoadingSlot) ? _c('div', {
-    staticClass: "spinner",
-    style: ({
-      padding: _vm.spinnerPadding,
-      zoom: _vm.spinnerScale
-    })
+    staticClass: "spinner"
   }, [(_vm.spinner !== 'none') ? _c(_vm.spinner, {
     tag: "component",
     attrs: {
       "color": _vm.spinnerColor
     }
-  }) : _vm._e()], 1) : _vm._e(), _vm._v(" "), (_vm.state == 'loading') ? _vm._t("loading") : _vm._e(), _vm._v(" "), (_vm.state == 'waiting') ? _vm._t("waiting") : _vm._e(), _vm._v(" "), (_vm.state == 'success') ? _vm._t("success") : _vm._e(), _vm._v(" "), (_vm.state == 'error') ? _vm._t("error") : _vm._e(), _vm._v(" "), (_vm.state == 'success' || _vm.state == 'error') ? _vm._t("loaded") : _vm._e(), _vm._v(" "), (_vm.state == 'success' && !_vm.hasWaitingSlot && !_vm.hasSuccessSlot) ? _vm._t("default") : _vm._e()], 2)
+  }) : _vm._e()], 1) : _vm._e()]), _vm._v(" "), (_vm.state == 'loading') ? _vm._t("loading") : _vm._e(), _vm._v(" "), (_vm.state == 'waiting') ? _vm._t("waiting") : _vm._e(), _vm._v(" "), (_vm.state == 'success') ? _vm._t("success") : _vm._e(), _vm._v(" "), (_vm.state == 'error') ? _vm._t("error") : _vm._e(), _vm._v(" "), (_vm.state == 'success' || _vm.state == 'error') ? _vm._t("loaded") : _vm._e(), _vm._v(" "), (_vm.state == 'success' && !_vm.hasWaitingSlot && !_vm.hasSuccessSlot) ? _vm._t("default") : _vm._e()], 2)
 },staticRenderFns: []}
 
 /***/ }),
 
-/***/ 126:
+/***/ 125:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -314,7 +306,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ 127:
+/***/ 126:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -327,7 +319,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ 128:
+/***/ 127:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -386,8 +378,8 @@ module.exports = __webpack_require__.p + "static/img/v-api@512.2c70ebf.png";
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Example_vue__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Example_vue__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Example_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_Example_vue__);
 
 
@@ -414,7 +406,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ApiRequest_vue__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ApiRequest_vue__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ApiRequest_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ApiRequest_vue__);
 
 
@@ -489,16 +481,13 @@ if (typeof window !== 'undefined' && window.Vue) {
 /***/ 55:
 /***/ (function(module, exports, __webpack_require__) {
 
-function injectStyle (ssrContext) {
-  __webpack_require__(119)
-}
 var Component = __webpack_require__(15)(
   /* script */
   __webpack_require__(76),
   /* template */
-  __webpack_require__(127),
+  __webpack_require__(126),
   /* styles */
-  injectStyle,
+  null,
   /* scopeId */
   null,
   /* moduleIdentifier (server only) */
@@ -517,7 +506,7 @@ var Component = __webpack_require__(15)(
   /* script */
   __webpack_require__(77),
   /* template */
-  __webpack_require__(128),
+  __webpack_require__(127),
   /* styles */
   null,
   /* scopeId */
@@ -851,7 +840,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1043,4 +1031,4 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ })
 
 },[57]);
-//# sourceMappingURL=app.11943627754cd85185a6.js.map
+//# sourceMappingURL=app.a97a90345d1bdeb179ba.js.map
