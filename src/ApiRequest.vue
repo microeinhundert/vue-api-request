@@ -1,12 +1,11 @@
 <template>
   <div class="js-api-request">
 
-    <div class="spinner"
-         v-if="state=='loading' && !hasLoadingSlot"
-         :style="{padding: spinnerPadding, zoom: spinnerScale}"
-    >
-      <component v-if="spinner !== 'none'" :is="spinner" :color="spinnerColor"></component>
-    </div>
+    <transition name="fade">
+      <div class="spinner" v-if="state=='loading' && !hasLoadingSlot" :style="{padding: spinnerPadding, zoom: spinnerScale}">
+        <component v-if="spinner !== 'none'" :is="spinner" :color="spinnerColor"></component>
+      </div>
+    </transition>
 
     <slot name="loading" v-if="state=='loading'"></slot>
 
@@ -22,6 +21,18 @@
 
   </div>
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
 
 <script>
   export default {
