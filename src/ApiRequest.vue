@@ -1,5 +1,5 @@
 <template>
-  <div class="api-request" :class="[animate]">
+  <div class="js-api-request" :class="[animate]">
 
     <div class="spinner"
          v-if="state=='loading' && !hasLoadingSlot"
@@ -23,57 +23,8 @@
   </div>
 </template>
 
-<style>
-  .api-request .spinner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .api-request .spinner .v-moon1 {
-    width: auto !important;
-    height: auto !important;
-  }
-</style>
-
 <script>
-  import 'animate.css'
-  import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
-  import GridLoader from 'vue-spinner/src/GridLoader.vue'
-  import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
-  import RiseLoader from 'vue-spinner/src/RiseLoader.vue'
-  import BeatLoader from 'vue-spinner/src/BeatLoader.vue'
-  import SyncLoader from 'vue-spinner/src/SyncLoader.vue'
-  import RotateLoader from 'vue-spinner/src/RotateLoader.vue'
-  import FadeLoader from 'vue-spinner/src/FadeLoader.vue'
-  import PacmanLoader from 'vue-spinner/src/PacmanLoader.vue'
-  import SquareLoader from 'vue-spinner/src/SquareLoader.vue'
-  import ScaleLoader from 'vue-spinner/src/ScaleLoader.vue'
-  import SkewLoader from 'vue-spinner/src/SkewLoader.vue'
-  import MoonLoader from 'vue-spinner/src/MoonLoader.vue'
-  import RingLoader from 'vue-spinner/src/RingLoader.vue'
-  import BounceLoader from 'vue-spinner/src/BounceLoader.vue'
-  import DotLoader from 'vue-spinner/src/DotLoader.vue'
-
   export default {
-    components: {
-      PulseLoader,
-      GridLoader,
-      ClipLoader,
-      RiseLoader,
-      BeatLoader,
-      SyncLoader,
-      RotateLoader,
-      FadeLoader,
-      PacmanLoader,
-      SquareLoader,
-      ScaleLoader,
-      SkewLoader,
-      MoonLoader,
-      RingLoader,
-      BounceLoader,
-      DotLoader
-    },
 
     data () {
       return {
@@ -98,7 +49,7 @@
       },
       effect: { // effect after load
         type: String,
-        'default': 'fadeIn'
+        'default': ''
       },
       resp: { // default path response
         type: String,
@@ -106,7 +57,7 @@
       },
       spinner: { // type of spinner
         type: String,
-        'default': 'ClipLoader'
+        'default': ''
       },
       spinnerColor: { // spinner color
         type: String,
